@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suhani Kaur – Product Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">✨ Suhani Kaur</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero d-flex align-items-center text-center text-lg-start">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 fade-in">
+          <h1 class="fw-bold mb-3">
+            ✨ “I design products that don’t just work — they click with people, stick in routines, and sometimes rhyme while doing it.” ✨
+          </h1>
+          <p class="lead">I’m Suhani — engineering undergrad turned product tinkerer. I build student-first fintech apps, FMCG GTM strategies, and AI-driven prototypes.</p>
+          <div class="mt-3 d-flex flex-wrap gap-3">
+            <a href="#work" class="btn btn-cta">🚀 See My Work</a>
+            <a id="downloadResume" class="btn btn-outline-light">📄 Download Resume</a>
+            <a href="#contact" class="btn btn-gradient">✉️ Let’s Connect</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="/Users/suhani/Desktop/product portfolio/img.avif" alt="Hero Illustration" class="img-fluid hero-img slide-up">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">About Me</h2>
+      <p class="poem">
+        “Half engineer, half storyteller,<br>
+        A PM-in-training, a deck propeller.<br>
+        From coding in Java to pitching GTMs,<br>
+        I blend logic with creativity — and throw in memes.”
+      </p>
+      <ul class="list-unstyled mt-4 fade-in text-start mx-auto" style="max-width: 600px;">
+        <li>🎓 Engineering undergrad @ GGSIPU (2024–28), CGPA: 8.5</li>
+        <li>💼 Product Associate Intern @ Zeepty (2025)</li>
+        <li>🏆 Hackathon junkie (Smart India Hackathon, IdeationX 2.0, Vihaan)</li>
+        <li>🚀 Loves solving student struggles & consumer myths</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="work" class="py-5 bg-dark-alt">
+    <div class="container">
+      <h2 class="mb-4 text-center">Featured Case Studies</h2>
+      <div class="row g-4">
+        <!-- Finance App -->
+        <div class="col-md-6">
+          <div class="case-card h-100">
+            <h4>📱 Student-First Finance App</h4>
+            <ul>
+              <li>Problem: Students broke mid-month; Splitwise ≠ hostel life.</li>
+              <li>Solution: College Mode, Quick Cash Widget, Secret Vault.</li>
+              <li>Strategy: Personas, wireframes, GTM via campus ambassadors.</li>
+              <li>Impact: 70% faster logging, budgeting confidence ↑</li>
+            </ul>
+            <p class="hook">💡 “Made budgeting as easy as buying Maggi in a hostel canteen.”</p>
+            <a class="btn btn-sm btn-cta me-2" id="viewFinance">View Deck</a>
+            <a href="/Users/suhani/Desktop/product portfolio/Studentfinance.pdf" target="_blank" class="btn btn-sm btn-outline-light">See Prototype</a>
+          </div>
+        </div>
+        <!-- HempVital -->
+        <div class="col-md-6">
+          <div class="case-card h-100">
+            <h4>🌿 HempVital – From Taboo to Trend</h4>
+            <ul>
+              <li>Problem: Hemp = taboo, bitter taste, whey dominates.</li>
+              <li>Solution: Cocoa/chocolate blends, ₹44–₹99 trial packs.</li>
+              <li>Strategy: Everyday positioning + celebs + micro-influencers.</li>
+              <li>Impact: TAM ₹500–750cr, ₹14.75L in 6 months.</li>
+            </ul>
+            <p class="hook">💡 “Not hyping hemp, just the help it lends — I turned taboo into trend with taste, trust, and blend.”</p>
+            <a class="btn btn-sm btn-cta" id="viewHemp">View Deck</a>
+          </div>
+        </div>
+        <!-- Stylout -->
+        <div class="col-md-6">
+          <div class="case-card h-100">
+            <h4>👗 Stylout – Fashion-Tech MVP</h4>
+            <ul>
+              <li>Problem: Fashion startups need real MVPs fast.</li>
+              <li>Solution: Figma → responsive multi-page site in 4 days.</li>
+              <li>Strategy: AI-generated code + UI fixes + 3 flows.</li>
+              <li>Impact: Live demo for investors & users.</li>
+            </ul>
+            <p class="hook">💡 “From Figma dreams to HTML screams — shipped in 4 days flat.”</p>
+            <a href="https://suhani1111.github.io/Stylout/signup.htm" target="_blank" class="btn btn-sm btn-cta">Live Demo</a>
+          </div>
+        </div>
+        <!-- Hackathons -->
+        <div class="col-md-6">
+          <div class="case-card h-100">
+            <h4>⚡ Hackathons & Side Projects</h4>
+            <ul>
+              <li>Sakhi Bot – detects online scams</li>
+              <li>Smart India Hackathon College finalist – Chemistry app</li>
+              <li>Physics Simulator – pendulum stats for students</li>
+            </ul>
+            <p class="hook">💡 “Hackathons taught me: constraints spark the best creativity.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-3 skill-card">🔍 Research<br><small>surveys, personas, pain points</small></div>
+        <div class="col-md-3 skill-card">💡 Ideation<br><small>storyboards, MVPs, frameworks</small></div>
+        <div class="col-md-3 skill-card">⚙️ Execution<br><small>wireframes, prototypes, MVPs</small></div>
+        <div class="col-md-3 skill-card">🛠️Tools<br><small>Asana, Notion, Figma, Canva, Microsoft Office</small></div>
+        <div class="col-md-3 skill-card">📈 Metrics<br><small>KPI dashboards, A/B tests</small></div>
+        <div class="col-md-3 skill-card">🤖 AI/ML<br><small>prompt engineering, fast protos</small></div>
+        <div class="col-md-3 skill-card">💻 Code<br><small>Java, Python, HTML/CSS/JS</small></div>
+        <div class="col-md-3 skill-card">🧠 Fundamentals<br><small>OOPS, DSA, algorithms</small></div>
+        <div class="col-md-3 skill-card">👥 Leadership<br><small>teams, hackathons, pitches</small></div>
+      </div>
+      <p class="mt-4 sticky-line">✨ “PM who writes PRDs, designs flows, codes demos, prompts AI — and still rhymes.”</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-dark-alt">
+    <div class="container text-center">
+      <h2 class="mb-4">💬 Let’s build something people love</h2>
+      <div class="d-flex flex-wrap gap-3 justify-content-center">
+        <a href="mailto:kaursalujasuhani@gmail.com" class="btn btn-outline-light">📧 Email</a>
+        <a href="https://www.linkedin.com/in/kaursalujasuhani" target="_blank" class="btn btn-outline-light">🔗 LinkedIn</a>
+        <a href="https://github.com/Suhani1111" target="_blank" class="btn btn-outline-light">🐙 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-3 text-muted">© <span id="year"></span> Suhani Kaur</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
