@@ -1,0 +1,25 @@
+:root { --bg:#0b0d12; --accent:#b1a6ff; --brand:#8ef6d4; --gradient:linear-gradient(135deg,#8ef6d4,#b1a6ff,#ff8a65); }
+
+body { background:var(--bg); color:#f5f6fa; font-family:"Inter",sans-serif; overflow-x:hidden; }
+.navbar{background:rgba(11,13,18,0.95);}
+.btn-cta{background:var(--gradient);color:#0b0d12!important;font-weight:bold;transition:all .3s;}
+.btn-cta:hover{transform:scale(1.05);}
+.btn-gradient{background:linear-gradient(90deg,#ff8a65,#b1a6ff);color:#fff;font-weight:600;transition:all .3s;}
+.btn-gradient:hover{opacity:0.9;transform:translateY(-2px);}
+.bg-dark-alt{background:#11141b;}
+
+.hero{padding:120px 0 80px;}
+.hero-img{max-height:320px;animation:float 4s ease-in-out infinite;}
+.poem{font-style:italic;color:#ccc;}
+.case-card{background:rgba(255,255,255,0.05);padding:20px;border-radius:12px;transition:transform .3s;}
+.case-card:hover{transform:translateY(-6px);}
+.hook{font-style:italic;color:var(--accent);}
+.skill-card{padding:16px;border-radius:12px;background:rgba(255,255,255,0.05);transition:transform .3s;}
+.skill-card:hover{transform:scale(1.05);}
+.sticky-line{font-weight:600;color:var(--brand);}
+
+.fade-in{animation:fadein 2s;}
+.slide-up{animation:slideup 2s;}
+@keyframes fadein{from{opacity:0;}to{opacity:1;}}
+@keyframes slideup{from{transform:translateY(40px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
