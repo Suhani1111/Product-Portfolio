@@ -3,7 +3,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 // Files in /assets
 const PATH="assets/";
-const files={resume:"SUHANI KAUR SALUJA RESUME3.pdf",hemp:"HEMP VITAL.pdf",finance:"KaurSuhani.pdf"};
+const files={resume:"SUHANI KAUR SALUJA RESUME.pdf",hemp:"HEMP VITAL.pdf",finance:"KaurSuhani.pdf"};
 
 // Helpers
 function openFile(f){window.open(PATH+f,"_blank");}
