@@ -7,7 +7,8 @@ const files={resume:"SUHANI KAUR SALUJA RESUME.pdf",hemp:"HEMP VITAL.pdf",financ
 
 // Helpers
 function openFile(f){window.open(PATH+f,"_blank");}
-function downloadFile(f){const a=document.createElement("a");a.href=PATH+f;a.download=f;a.click();}
+function downloadFile(f){const a=document.createElement("a");a.href=PATH + encodeURIComponent(f);a.download=f;document.body.appendChild(a);a.click();document.body.removeChild(a);
+}
 
 // Resume
 document.getElementById("downloadResume").onclick=()=>downloadFile(files.resume);
