@@ -1,19 +1,86 @@
-// Update year
-document.getElementById("year").textContent = new Date().getFullYear();
+// YEAR
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
-// Files in /assets
-const PATH="./";
-const files={resume:"SUHANI RESUME.pdf",hemp:"HEMP VITAL.pdf",finance:"Studentfinance.pdf"};
 
-// Helpers
-function openFile(f){window.open(PATH+f,"_blank");}
-function downloadFile(f){const a=document.createElement("a");a.href=PATH + encodeURIComponent(f);a.download=f;document.body.appendChild(a);a.click();document.body.removeChild(a);
+// ==========================
+// FILE PATHS
+// ==========================
+const PATH = "./";
+
+const files = {
+
+  resume: "suhani_resume.pdf",
+
+  smg: "Kabira Final deck2.pdf",
+
+  superyou: "superyou.pdf",
+
+  delhivery:
+    "GTM Strategy to Unlock Consumer & SMB Intra-City Logistics for Delhivery (1)_compressed.pdf",
+
+  swiggy:
+    "FoodieWe(1).pdf"
+};
+
+
+// ==========================
+// HELPERS
+// ==========================
+function openFile(fileName){
+  window.open(
+    PATH + encodeURIComponent(fileName),
+    "_blank"
+  );
 }
 
-// Resume
-document.getElementById("downloadResume").onclick=()=>downloadFile(files.resume);
+function downloadFile(fileName){
 
-// Case Studies
-document.getElementById("viewFinance").onclick=()=>openFile(files.finance);
-document.getElementById("viewHemp").onclick=()=>openFile(files.hemp);
-document.getElementById("viewProjects").onclick=()=>openFile(files.resume); // placeholder for highlights
+  const a = document.createElement("a");
+
+  a.href = PATH + encodeURIComponent(fileName);
+
+  a.download = fileName;
+
+  document.body.appendChild(a);
+
+  a.click();
+
+  document.body.removeChild(a);
+}
+
+
+// ==========================
+// RESUME
+// ==========================
+document
+  .getElementById("downloadResume")
+  .onclick = () => downloadFile(files.resume);
+
+
+// ==========================
+// CASE STUDIES
+// ==========================
+
+// SMG
+document
+  .getElementById("viewSMG")
+  .onclick = () => openFile(files.smg);
+
+
+// SUPERYOU
+document
+  .getElementById("viewSuperYou")
+  .onclick = () => openFile(files.superyou);
+
+
+// DELHIVERY
+document
+  .getElementById("viewDelhivery")
+  .onclick = () => openFile(files.delhivery);
+
+
+// SWIGGY
+document
+  .getElementById("viewSwiggy")
+  .onclick = () => openFile(files.swiggy);
